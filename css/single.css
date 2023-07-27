@@ -1,0 +1,246 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+}
+html body .site-main .entry-content .imagen-portada {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+html body .site-main .entry-content .titulo {
+  padding: 0px 10px 0px 10px;
+  font-family: "Abril Fatface", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 34px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+html body .site-main .entry-content .fecha_dia {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  /* line-height: 26px; */
+  color: #222222;
+  padding: 0px 10px 0px 10px;
+  margin-top: 0;
+}
+html body .site-main .entry-content .presentacion {
+  padding: 0px 10px 0px 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  /* or 160% */
+  color: #1E1E1E;
+}
+html body .site-main .entry-content .itinerario {
+  padding: 0px 10px 0px 10px;
+}
+html body .site-main .entry-content .itinerario p {
+  margin-top: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 160% */
+  color: #3A3434;
+  margin-bottom: 0px;
+}
+html body .site-main .entry-content .itinerario h2 {
+  margin-top: 60px;
+}
+html body .site-main .entry-content .itinerario h2 span {
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 89% */
+  color: #000000;
+}
+html body .site-main .entry-content .itinerario h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+  color: #3A3434;
+  margin-bottom: 0px;
+  padding: 20px 0px 3px 0px;
+}
+html body .site-main .entry-content .formulario-container-soon form .wpcf7-submit {
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border-radius: 5px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+html body .site-main .entry-content .formulario-container-soon input,
+html body .site-main .entry-content .formulario-container-soon textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+html body .site-main .entry-content .formulario-container-soon textarea {
+  height: 100px;
+}
+html body .site-main .entry-content .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+html body .site-main .entry-content .btn-container .btn-itinerario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  /* gradient */
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+  /* white */
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease; /* aquí defines la transición */
+}
+html body .site-main .entry-content .btn-container .btn-itinerario:hover {
+  transform: scale(1.1); /* aquí defines la animación en hover */
+}
+
+@media (min-width: 768px) {
+  html body .site-main {
+    padding: 0px 30px 0px 30px;
+  }
+  html body .site-main .entry-content {
+    margin-top: 100px;
+  }
+  html body .site-main .entry-content .titulo {
+    font-size: 48px;
+    line-height: 34px;
+    padding: 0;
+    margin-bottom: 26px;
+  }
+  html body .site-main .entry-content .fecha_dia {
+    padding-left: 0px;
+    font-size: 24px;
+  }
+  html body .site-main .entry-content .presentacion {
+    font-size: 20px;
+    padding: 0px;
+  }
+  html body .site-main .entry-content .itinerario {
+    padding: 0;
+  }
+  html body .site-main .entry-content .itinerario h2 {
+    margin-top: 60px;
+  }
+  html body .site-main .entry-content .itinerario h2 span {
+    margin-top: 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 89% */
+    color: #000000;
+  }
+  html body .site-main .entry-content .itinerario h3 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+    color: #3A3434;
+    margin-bottom: 0px;
+  }
+  html body .site-main .entry-content .itinerario p {
+    font-weight: 350;
+    font-size: 20px;
+  }
+  html body .site-main .entry-content .btn-container .btn-itinerario {
+    width: 300px;
+    height: 50px;
+  }
+  html body .site-main .entry-content .btn-container .btn-itinerario:hover {
+    transform: scale(1.1); /* aquí defines la animación en hover */
+  }
+}
+@media (min-width: 1000px) {
+  html body .site-main {
+    padding: 0px 220px 0px 220px;
+  }
+  html body .site-main .entry-content .presentacion {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0px;
+  }
+  html body .site-main .entry-content .itinerario {
+    padding: 0;
+  }
+  html body .site-main .entry-content .itinerario h2 {
+    margin-top: 60px;
+  }
+  html body .site-main .entry-content .itinerario h2 span {
+    margin-top: 80px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 89% */
+    color: #000000;
+  }
+  html body .site-main .entry-content .itinerario h3 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+    color: #3A3434;
+    margin-bottom: 0px;
+    padding: 30px 0px 5px 0px;
+  }
+  html body .site-main .entry-content .itinerario p {
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+/*# sourceMappingURL=single.css.map */
