@@ -307,7 +307,7 @@ html body .site-main .tarjetas-viajes-container .card .info-card .fecha-btn-cont
 html body .site-main .tarjetas-viajes-container .card .info-card .fecha-btn-container .agotado {
   width: 100px;
   height: 45px;
-  background: #FF689F;
+  background: rgba(255, 125, 104, 0.6784313725);
   border-radius: 8px;
   border: none;
   font-family: "Poppins", sans-serif;
@@ -591,11 +591,21 @@ html body .contacto-container .buttons-container a:nth-child(1) {
 }
 html body .contacto-container .buttons-container a:nth-child(2) {
   background: radial-gradient(174.51% 174.51% at 57.33% 162.75%, #FFD654 0%, #F9B031 23.44%, #FB5246 52.08%, #E64771 77.6%, #C837AB 93.23%);
-  box-shadow: 0px 32.479px 40.5987px rgba(250, 141, 57, 0.47);
+  box-shadow: none;
+  transition: 300ms all 0ms ease-in-out;
+}
+html body .contacto-container .buttons-container a:nth-child(2):hover {
+  box-shadow: 0px 15.479px 40.5987px rgba(250, 141, 57, 0.4);
+  transform: translateY(-2px);
 }
 html body .contacto-container .buttons-container a:nth-child(3) {
   background: #FB5246;
-  box-shadow: 0px 32.479px 40.5987px rgba(180, 53, 64, 0.37);
+  box-shadow: none;
+  transition: 300ms all 0ms ease-in-out;
+}
+html body .contacto-container .buttons-container a:nth-child(3):hover {
+  box-shadow: 0px 15.479px 40.5987px rgba(180, 53, 64, 0.37);
+  transform: translateY(-2px);
 }
 html footer {
   margin: 100px 0px 0px 0px;
@@ -970,7 +980,7 @@ html footer .logo-sw-fixed img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   html body .post-header .text-img-container .text-header h1 {
     font-size: 65px;

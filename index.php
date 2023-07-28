@@ -32,18 +32,14 @@ get_header();
       </p>
     </div>
 
-    <img class="img-header"
-     srcset="
+    <img class="img-header" srcset="
              <?php echo get_template_directory_uri(); ?>/img/PT_Mente-mobile.png 768w,
-             <?php echo get_template_directory_uri(); ?>/img/PT_Mente.png 1200w"
-     sizes="(max-width: 320px) 280px,
+             <?php echo get_template_directory_uri(); ?>/img/PT_Mente.png 1200w" sizes="(max-width: 320px) 280px,
             (max-width: 768px) 730px,
-            1140px"
-     src="<?php echo get_template_directory_uri(); ?>/img/PT_Mente.png"
-     alt="Mente" loading="lazy">
-    
-    
-    
+            1140px" src="<?php echo get_template_directory_uri(); ?>/img/PT_Mente.png" alt="Mente" loading="lazy">
+
+
+
   </div>
 </section>
 
@@ -75,9 +71,14 @@ get_header();
         $boton_clase = $tarjeta_agotado ? 'agotado' : ($tarjeta_soon ? 'coming-soon' : 'info');
     ?>
         <div class="card">
-          <a href="<?php echo esc_url(get_permalink()); ?>">
+          
+          <?php if ($tarjeta_agotado) { ?>
             <img src="<?php echo esc_url($tarjeta_imagen['url']); ?>" alt="<?php echo esc_attr($tarjeta_imagen['alt']); ?>" loading="lazy">
-          </a>
+          <?php } else { ?>
+            <a href="<?php echo get_permalink(); ?>">
+              <img src="<?php echo esc_url($tarjeta_imagen['url']); ?>" alt="<?php echo esc_attr($tarjeta_imagen['alt']); ?>" loading="lazy">
+            </a>
+          <?php } ?>
 
           <div class="info-card">
             <div class="titulo-destino">
@@ -88,7 +89,7 @@ get_header();
             <p class="info-resumen"><?php echo esc_html($tarjeta_resumen); ?></p>
 
             <div class="fecha-btn-container">
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $tarjeta_agotado ? 'Navigation-sold-out.png' : ($tarjeta_soon ? 'Navigation-coming-soon.png' : 'Navigation.png'); ?>" alt="Mapa icon" loading="lazy">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/img/<?php echo ($tarjeta_agotado || $tarjeta_soon) ? 'Navigation-coming-soon.png' : 'Navigation.png'; ?>" alt="Mapa icon" loading="lazy">
               <p><?php echo esc_html($tarjeta_fecha_inicio); ?> - <?php echo esc_html($tarjeta_fecha_finalizacion); ?></p>
 
               <?php if ($tarjeta_agotado) { ?>
@@ -117,7 +118,7 @@ get_header();
   <h1>Convertite en miembro de LaGuan</h1>
   <p>disfrutá de beneficios exclusivos</p>
 
-   
+
   <div id="miCarrusel1" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="5000">
     <div class="carousel-inner">
       <div class="carousel-item active">
