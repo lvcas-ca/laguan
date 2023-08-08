@@ -8,12 +8,16 @@
 html {
   margin: 0;
 }
+html body .site-main .entry-content {
+  max-width: 1190px;
+}
 html body .site-main .entry-content .imagen-portada {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 350px;
+  height: 250px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-top: 150px;
+  background-position: center center;
 }
 html body .site-main .entry-content .titulo {
   padding: 0px 10px 0px 10px;
@@ -145,14 +149,12 @@ html body .site-main .entry-content .btn-container .btn-itinerario:hover {
   html body .site-main {
     padding: 0px 30px 0px 30px;
   }
-  html body .site-main .entry-content {
-    margin-top: 100px;
-  }
   html body .site-main .entry-content .titulo {
     font-size: 48px;
     line-height: 34px;
     padding: 0;
     margin-bottom: 26px;
+    margin-top: 30px;
   }
   html body .site-main .entry-content .fecha_dia {
     padding-left: 0px;
@@ -203,6 +205,14 @@ html body .site-main .entry-content .btn-container .btn-itinerario:hover {
 @media (min-width: 1000px) {
   html body .site-main {
     padding: 0px 220px 0px 220px;
+  }
+  html body .site-main .entry-content .titulo {
+    padding-top: 0px;
+  }
+  html body .site-main .entry-content .imagen-portada {
+    height: 395px;
+    margin-bottom: 30px;
+    margin-top: 100px;
   }
   html body .site-main .entry-content .presentacion {
     font-size: 20px;
